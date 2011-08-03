@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "gogetter"
+gem "nokogiri", "~> 1.5.0"
 
 group :development, :test do
   gem "rspec", "~> 2.6.0"

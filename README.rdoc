@@ -1,6 +1,6 @@
-= FatChico
+= Chico
 
-FatChico fetches favicons from web pages.
+Chico fetches favicons from web pages.
 
 
 == Copyright
