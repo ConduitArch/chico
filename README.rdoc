@@ -1,6 +1,7 @@
 = Chico
 
-Chico fetches favicons from web pages.
+Chico fetches favicons from web pages and extracts PNG images from the ICO
+format, all in native Ruby.
 
 
 == Copyright
