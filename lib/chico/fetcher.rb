@@ -21,7 +21,7 @@ module Chico
         fetch_default || find_link_on_page(@url)
       else
         # try to find a favicon for the specific path first
-        if path = find_link_on_page @url
+        if path = find_link_on_page(@url)
           fetch_icon path
         else
         # if failed, try again with the root path
@@ -57,7 +57,7 @@ module Chico
       if res.is_a? HTTPOK
         doc = Nokogiri res.body
         ICON_XPATHS.each do |xpath|
-          if link = doc.at xpath
+          if link = doc.at(xpath)
             return link[:href]
           end
         end

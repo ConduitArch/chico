@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    chunky_png (1.2.1)
     diff-lcs (1.1.2)
     fakeweb (1.3.0)
     git (1.2.5)
@@ -26,6 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.0)
+  chunky_png
   fakeweb (~> 1.3.0)
   gogetter
   jeweler (~> 1.6.4)

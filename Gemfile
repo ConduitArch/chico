@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem "gogetter"
 gem "nokogiri", "~> 1.5.0"
+gem "chunky_png"
 
 group :development, :test do
   gem "rspec", "~> 2.6.0"
