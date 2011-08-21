@@ -4,3 +4,4 @@ doc
 .bundle
 pkg
 .idea/
+spec/res/temp

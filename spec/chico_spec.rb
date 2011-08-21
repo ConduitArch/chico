@@ -8,7 +8,10 @@ describe "Chico" do
     ex.entries.each do |entry|
       ext = "#{entry[:width]}x#{entry[:height]}"
       content = ex.image_for(entry)
-      File.open(File.join(File.dirname(__FILE__), 'res', "#{basename}.#{ext}.png"), 'wb') do |f|
+      if !File.directory? "res/temp"
+        Dir.mkdir("res/temp")
+      end
+      File.open(File.join(File.dirname(__FILE__), 'res/temp', "#{basename}.#{ext}.png"), 'wb') do |f|
         f.write content
       end
     end

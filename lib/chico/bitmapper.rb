@@ -4,7 +4,7 @@ module Chico
     attr_reader :pixels
 
     def initialize(data, ico_direntry=nil)
-      @data = data
+        @data = data
       @ico_direntry = ico_direntry
     end
 
@@ -75,19 +75,19 @@ module Chico
     end
 
     def bitmap32
-      (@height-1..0).map { |y|
+      (0...@height).to_a.reverse.map { |y|
         (0...@width).map { |x|
           pos = @offset + 4 * (y * @width + x)
-          puts "data[#{pos}] = #{data[pos]}"
-          @data[@offset + 4 * (y * @width + x), 4].unpack('BBBB').values_at(2, 1, 0, 3)
+          #puts "data[#{pos}] = #{@data[pos]}"
+          @data[@offset + 4 * (y * @width + x), 4].unpack('CCCC').values_at(2, 1, 0, 3)
         }
       }.flatten
     end
 
     def bitmap24
-      (@height-1..0).map { |y|
+      (0...@height-1).to_a.reverse.map { |y|
         (0...@width).map { |x|
-          @data[@offset + 3 * (y * @width + x), 3].unpack('BBB').values_at(2, 1, 0) + [255]
+          @data[@offset + 3 * (y * @width + x), 3].unpack('CCC').values_at(2, 1, 0) + [255]
         }
       }.flatten
     end
