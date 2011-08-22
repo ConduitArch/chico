@@ -3,7 +3,10 @@
 Chico fetches favicons from web pages and extracts PNG images from the ICO
 format, all in native Ruby.
 
+== Usage
+icon_dir = Chico::Extractor.new(IO.read('google.ico'))
 
+icons = image.entries
 == Copyright
 
 Copyright (c) 2011 Conduit Ltd.
