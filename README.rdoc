@@ -5,6 +5,7 @@ format, all in native Ruby.
 
 == Usage
 icon_dir = Chico::Extractor.new(IO.read('google.ico'))
+
 icons = image.entries
 == Copyright
 
