@@ -1,3 +1,5 @@
+require 'gogetter'
+require 'nokogiri'
 module Chico
 
   # How it works:

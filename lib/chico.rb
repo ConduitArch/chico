@@ -18,7 +18,7 @@ module Chico
   end
 
   def self.extract_from_url(url, dest_dir, options={})
-    fetcher = Fetcher.new(url)
+    fetcher = Fetecher.new(url)
     ex = Extractor.new(fetcher.fetch)
     write_to_files(ex, dest_dir, URI.parse(url).host)
   end

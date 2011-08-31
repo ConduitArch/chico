@@ -5,3 +5,4 @@ doc
 pkg
 .idea/
 spec/res/temp
+*.gem

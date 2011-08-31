@@ -1,3 +1,4 @@
+require 'chunky_png'
 module Chico
   # Extracts icons images (bmp / png) from an .ico file
   class Extractor

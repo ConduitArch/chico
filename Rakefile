@@ -18,7 +18,10 @@ Jeweler::Tasks.new do |gem|
   gem.license = "Apache2"
   gem.summary = %Q{Fetch favicons}
   gem.email = "elad.kehat@conduit.com"
-  gem.authors = ["Elad Kehat"]
+  gem.authors = ["Elad Kehat", 'Ben Aviram']
+  ["gogetter",["nokogiri", "~> 1.5.0"], "chunky_png"].each do |dep|
+    gem.add_dependency *dep
+  end
 end
 Jeweler::RubygemsDotOrgTasks.new
 
