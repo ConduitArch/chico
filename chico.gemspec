@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{chico}
+  s.name = "chico"
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Elad Kehat", "Ben Aviram"]
-  s.date = %q{2011-08-31}
-  s.email = %q{elad.kehat@conduit.com}
+  s.date = "2011-08-31"
+  s.email = "elad.kehat@conduit.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -43,11 +43,11 @@ Gem::Specification.new do |s|
     "spec/res/yahoo.ico",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/ConduitTeam/chico}
+  s.homepage = "http://github.com/ConduitTeam/chico"
   s.licenses = ["Apache2"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.7.2}
-  s.summary = %q{Fetch favicons}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Fetch favicons"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
